@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String name=in.next();
+        String d=toggleCase(name);
+        System.out.println(d);
+    }
+    static String toggleCase(String str){
+        char[] ch=str.toCharArray();
+        for(int i=0;i<ch.length;i++){
+            char c=str.charAt(i);
+            if(Character.isUpperCase(c)){
+                ch[i]=Character.toLowerCase(c);
+            }
+            else{
+                ch[i]=Character.toUpperCase(c);
+            }
+        }
+        return new String(ch);
+    }
+}
+
+ALTERNATE METHOD
+
+public class Main {
+
+    public static void main(String[] args) {
+        String s = "PrePInsTa";
+        String s1 = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isUpperCase(s.charAt(i))) {
+                s1 = s1 + Character.toLowerCase(s.charAt(i));
+            } else {
+                s1 = s1 + Character.toUpperCase(s.charAt(i));
+            }
+        }
+        System.out.println(s1);
+    }
+}

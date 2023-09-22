@@ -1,0 +1,17 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int[] a={1,2,3,4,5,989};
+//        for(int i=0;i<a.length;i++){
+//            a[i]=in.nextInt();
+//        }
+        int largestElement=a[0];
+        for(int i=0;i<a.length;i++){
+            if(largestElement<a[i]){
+                largestElement=a[i];
+            }
+        }
+        System.out.println(largestElement);
+    }
+}
