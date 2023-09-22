@@ -1,0 +1,26 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in =new Scanner(System.in);
+        int a=in.nextInt();
+        int b=in.nextInt();
+        int aSum=0;
+        int bSum=0;
+        for(int i=1;i<a;i++){
+            if(a%i==0){
+                aSum+=i;
+            }
+        }
+        for(int i=1;i<b;i++){
+            if(b%i==0){
+                bSum+=i;
+            }
+        }
+        if(aSum/a==1 && bSum/b==1){
+            System.out.println(a+" and "+b+" are friendly Pairs");
+        }
+        else
+            System.out.println("Not");
+    }
+}

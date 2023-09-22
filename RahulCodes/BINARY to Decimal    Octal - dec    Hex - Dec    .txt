@@ -1,0 +1,44 @@
+BINARY TO DECIMAL:
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    String a=sc.nextLine();
+    int decimal=Integer.parseInt(a,2);
+    System.out.println("Decimal version is : "+decimal);
+    }
+}
+
+
+OCTAL TO DECIMAL:
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    String a=sc.nextLine();
+    int decimal=Integer.parseInt(a,8);
+    System.out.println("Decimal version is : "+decimal);
+    }
+}
+
+
+HEXADECIMAL TO DECIMAL:
+
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    String a=sc.nextLine();
+    int decimal=Integer.parseInt(a,16);
+    System.out.println("Decimal version is : "+decimal);
+    }
+}

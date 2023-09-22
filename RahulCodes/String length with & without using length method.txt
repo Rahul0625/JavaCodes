@@ -1,0 +1,29 @@
+STRING LENGTH WITHOUT USING LENGTH METHOD
+        
+        
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String c=in.next();
+        int length=0;
+        for(int b:c.toCharArray()){
+            length++;
+        }
+        System.out.println(length);
+    }
+}
+
+
+
+STRING LENGTH USING "LENGTH" METHOD
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String c=in.next();
+        System.out.println(c.length());
+    }
+}
